@@ -12,7 +12,3 @@ jobs:
       - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          secrets: |
-            PADDLE_API_KEY
-        env:
-          PADDLE_API_KEY: ${{ secrets.PADDLE_API_KEY }}
